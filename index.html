@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecionar elemento por classe</title>
+</head>
+<body>
+
+  
+    <p class="minha-classe">Elemento 1</p>
+    <p class="minha-classe">Elemento 2</p>
+    <p class="minha-classe">Elemento 3</p>
+
+
+    <script>
+        
+        let elementos = document.getElementsByClassName("minha-classe");
+
+       
+        for (let i = 0; i < elementos.length; i++) {
+            elementos[i].textContent = "Selecione todos os elementos de uma página HTML por sua classe e altere o texto desses elementos.";
+        }
+    </script>
+
+</body>
+</html>
